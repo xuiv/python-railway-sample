@@ -1,0 +1,20 @@
+{
+  "inbound": {
+    "port": "env:PORT",
+    "protocol": "socks",
+    "settings": {
+      "auth": "noauth",
+      "udp": true
+    },
+    "streamSettings": {
+      "network":"ws",
+      "wsSettings": {
+        "path":"/404"
+      }
+    }
+  },
+  "outbound": {
+    "protocol": "freedom",
+    "settings": {}
+  }
+}
